@@ -1,0 +1,46 @@
+{
+    "cardapio": [
+        {
+            "pizzas": [
+                {
+                    "sabor": "Calabresa",
+                    "valor": "29.90"
+                },
+                {
+                    "sabor": "Frango c/ Catupiry",
+                    "valor": "33.90"
+                },
+                {
+                    "sabor": "Lombo Canadense",
+                    "valor": "35.90"
+                },
+                {
+                    "sabor": "Pepperoni",
+                    "valor": "31.90"
+                }
+            ]
+        },
+        {
+            "bebidas": [
+                {
+                    "nome": "Agua",
+                    "valor": "3.50"
+                },
+                {
+                    "nome": "Suco Jarra",
+                    "valor": "10.90"
+                },
+                {
+                    "nome": "Suco Copo",
+                    "valor": "5.00"
+                },
+                {
+                    "nome": "Refrigerante 1L",
+                    "valor": "9.90"
+                }
+            ]
+        }
+    ]
+}
+
+
