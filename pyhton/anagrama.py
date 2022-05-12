@@ -1,3 +1,4 @@
+#OBI JUNIOR 2021 FASE 2
 tamanho = int(input())
 
 palavra1 = list(input())
