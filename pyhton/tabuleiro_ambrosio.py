@@ -11,6 +11,6 @@ while casa != ultima_casa:
         contador.append(casa)
     casa += n
     n += 1
-    if n >= 6:
+    if n > 6:
         n = 1
 print(len(contador))
