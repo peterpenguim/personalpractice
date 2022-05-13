@@ -1,34 +1,15 @@
 ultima_casa = int(input())
 contador = []
 casa = 1
-while True:
-    if casa == ultima_casa:
-        break
+n = 1
+while casa != ultima_casa:
+    if casa > ultima_casa:
+        casa = casa - ultima_casa
+        contador.append(casa)
     else:
         contador.append(casa)
-        casa = casa + 2
-        if casa == ultima_casa:
-            break
-        else:
-            contador.append(casa)
-            casa = casa + 3
-            if casa == ultima_casa:
-                break
-            else:
-                contador.append(casa)
-                casa = casa + 4
-                if casa == ultima_casa:
-                    break
-                else:
-                    contador.append(casa)
-                    casa = casa + 5
-                    if casa == ultima_casa:
-                        break
-                    else:
-                        contador.append(casa)
-                        casa = casa + 6
-                        if casa == ultima_casa:
-                            break
-                        else:
-                            contador.append(casa)
-print(len(contador) + 1)
+    casa += n
+    n += 1
+    if n >= 6:
+        n = 1
+print(len(contador))
