@@ -2,8 +2,11 @@ main :: IO()
 main = do
  entrada' <- getLine
  let entrada = entrada'
- putStrLn $ reverse (replaceO entrada)
- print (countLetters entrada 'a' + countLetters entrada 'A' + countLetters entrada 'e' + countLetters entrada 'E' + countLetters entrada 'o' + countLetters entrada 'O' + countLetters entrada 'i' + countLetters entrada 'I' + countLetters entrada 't' + countLetters entrada 'T' + countLetters entrada 's' + countLetters entrada 'S')
+ let soma = (countLetters entrada 'a' + countLetters entrada 'A' + countLetters entrada 'e' + countLetters entrada 'E' + countLetters entrada 'o' + countLetters entrada 'O' + countLetters entrada 'i' + countLetters entrada 'I' + countLetters entrada 't' + countLetters entrada 'T' + countLetters entrada 's' + countLetters entrada 'S')
+ if not(null entrada)
+   then 
+    putStrLn $ reverse (replaceO entrada) ++ "\n" ++ show soma
+ else putStrLn $ "vazio\n" ++ show 0
 
 replaceO [] = []
 replaceO (x : xs)
