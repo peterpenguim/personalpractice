@@ -1,4 +1,3 @@
-import Data.Char
 main :: IO()
 main = do
  entrada' <- getLine
